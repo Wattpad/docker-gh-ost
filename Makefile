@@ -4,11 +4,11 @@ PREFIX=wattpad/gh-ost
 GHOST_REVISION=904215e
 
 GHOST_VERSION=ghost-$(GHOST_REVISION)
-IMAGE_VERSION=git-$(shell git rev-parse --short HEAD)
+BUILD_VERSION=build-$(shell git rev-parse --short HEAD)
 ALPINE_VERSION=alpine-$(shell grep '^FROM alpine' Dockerfile  | cut -d ':' -f 2)
 
 ifndef TAG
-	TAG := $(GHOST_VERSION)-$(ALPINE_VERSION)-$(IMAGE_VERSION)
+	TAG := $(GHOST_VERSION)_$(ALPINE_VERSION)_$(BUILD_VERSION)
 endif
 
 ghost:
