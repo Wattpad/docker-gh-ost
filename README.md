@@ -7,3 +7,5 @@ Usage:
   ```shell
   docker run -ti wattpad/gh-ost:<git_revision> /gh-ost <args>
   ```
+
+Travis build: https://travis-ci.org/Wattpad/docker-gh-ost
