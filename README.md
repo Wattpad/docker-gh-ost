@@ -9,3 +9,4 @@ Usage:
   ```
 
 Travis build: https://travis-ci.org/Wattpad/docker-gh-ost
+Docker Hub repo: https://hub.docker.com/r/wattpad/gh-ost/
